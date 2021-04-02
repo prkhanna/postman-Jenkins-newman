@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Postman Pipeline script",
   "scripts": {
-    "api-test": "newman run F:\PostmanPipeline\Comments.JSON -r htmlextra --reporter-htmlextra-export F:\Postman\results\Pipelinereport.html --reporter-htmlextra-title \"Postman Combined\""
+    "api-test": "newman run F:\PostmanPipeline\Tests\Comments.JSON"
   },
   "author": "Prince Khanna",
   "dependencies": {
