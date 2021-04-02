@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Postman Pipeline script",
   "scripts": {
-    "api-test": "echo \"Error: no test specified\" && exit 1"
+    "api-test": "newman run F:\PostmanPipeline\Tests\Comments.JSON"
   },
   "author": "Prince Khanna",
   "dependencies": {
