@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "4d418ac3-7979-4056-b283-c6c63bd691d1",
+		"name": "Photos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "photo",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "08b8ae97-a595-4ca2-9e49-411139d75c02",
+						"exec": [
+							"pm.globals.get(\"photos\");\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/photos",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"photos"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
