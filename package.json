@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Postman Pipeline script",
   "scripts": {
-    "api-test": "newman run Tests/Comments.JSON"
+    "api-test": "newman run Tests/Comments.JSON --disable-unicode "
   },
   "author": "Prince Khanna",
   "dependencies": {
