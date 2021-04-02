@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Postman Pipeline script",
   "scripts": {
-    "api-test": "newman run F:\PostmanPipeline\Tests\Comments.JSON"
+    "api-test": "newman run Tests\Comments.JSON"
   },
   "author": "Prince Khanna",
   "dependencies": {
