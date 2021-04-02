@@ -7,6 +7,7 @@
   },
   "author": "Prince Khanna",
   "dependencies": {
-    "newman": "^5.2.2"
+     "newman": "^5.2.2",
+    "newman-reporter-htmlextra": "^1.20.3"
   }
 }
