@@ -59,7 +59,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://jsonplaceholder.typicode.com/photos",
+					"raw": "https://jsonplaceholder.typicode.com/photo",
 					"protocol": "https",
 					"host": [
 						"jsonplaceholder",
@@ -67,7 +67,7 @@
 						"com"
 					],
 					"path": [
-						"photos"
+						"photo"
 					]
 				}
 			},
