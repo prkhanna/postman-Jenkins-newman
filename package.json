@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Postman Pipeline script",
   "scripts": {
-
+    "combine-test" : "postman-combine-collections -f Tests/*  --output combine/All.json",
     "api-test": "newman run Tests/Comments.JSON --disable-unicode -r htmlextra --reporter-htmlextra-export Tests/report.html --reporter-htmlextra-title \"PostManPOC\""
   },
   "author": "Prince Khanna",
