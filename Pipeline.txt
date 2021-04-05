@@ -1,0 +1,28 @@
+
+node {
+  
+  
+    stage('checkout'){
+        checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [],userRemoteConfigs: [[credentialsId: '3b49121e-9b88-41b2-a51b-dbb5e7052753',url: 'https://github.com/prkhanna/postman-Jenkins-newman.git']]])
+        
+    }
+    stage ('install'){
+         bat 'npm install'
+ 
+    }
+    stage('combine Json'){
+        bat 'npm run combine-test'
+    }
+    
+     stage('Running Collection'){
+        bat 'npm run api-test'
+    }
+    
+  //stage ('email'){
+   //   emailext body: 'readFile("tests/report.html)', subject: 'Jenkins007 Test', to: 'prince.khanna1988@gmail.com',
+   //   mimeType: 'text/html'
+ // }
+   
+}
+   
+  
